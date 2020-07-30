@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <title>Auto Scrolling </title>
+</head>
+
+<body>
+    <div class="menu-btn">
+        <i class="fas fa-bars fa-2x"></i>
+    </div>
+    <nav class="main-nav">
+        <img src="img/logo.png" alt="" class="logo">
+        <img src="img/logo-mobile.png" alt="" class="logo-m">
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Company Overview</a></li>
+            <li><a href="#">Workplace</a></li>
+            <li><a href="#">Innovation</a></li>
+            <li><a href="#">Awards</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Media</a></li>
+        </ul>
+    </nav>
+    <header class="main-header">
+        <h1><span>Nippon Paint</span> Gallery</h1>
+        <p>
+            Today, the company’s core principles involve innovative coatings solutions and high performance products for
+            architectural, industrial, automotive, heavy duty coatings, marine, trade and general consumer use while
+            fulfilling ts commitments to its customers and creates the value with which it serves humanity through
+            outreach programmes.</p>
+    </header>
+    <main class="container">
+        <section class="card" id="about" data-aos="fade-left" data-aos-once="true">
+            <img src="img/1.png" alt="">
+            <div>
+                <h3>About Us</h3>
+                <p>As a paint and coatings specialist, NIPSEA Group beautifies urban landscapes and continually creates
+                    superior Nippon Paint products to enhance people’s lives. With more than 70 NIPSEA companies spread
+                    throughout Asia, it understands the local needs of its customers in every community. Each company
+                    embraces diversity and operates together with a strong Pan-Asia presence.</p>
+                <a href="#about" class="btn">Learn More</a>
+            </div>
+        </section>
+        <section class="card" id="purpose" data-aos="fade-right">
+            <img src="img/2.png" alt="">
+            <div>
+                <h3>Our Purpose</h3>
+                <p>At NIPSEA Group, employees come from different backgrounds and represent unique cultures, but as
+                    diverse as it is, the company is bound by its values and purpose that magnify Excellence and Growth
+                    for its people & Value Creation for its customers and shareholders in the Paints & Coatings industry
+                    through our:</p>
+                <a href="#purpose" class="btn">Learn More</a>
+            </div>
+        </section>
+        <section class="card" id="origins" data-aos="fade-left">
+            <img src="img/3.jpg" alt="">
+            <div>
+                <h4>THE ORIGINS</h4>
+                <h3>STRONG GROWTH IN ASIA PACIFIC</h3>
+                <p>NIPSEA Group has expanded to a total of 16 countries and regions including Singapore, China, Hong
+                    Kong, Malaysia, Vietnam, South Korea, Thailand, Taiwan, India, Pakistan, Sri Lanka, Bangladesh,
+                    Philippines, Indonesia and Middle East and still growing to date. It has become one of the best
+                    coatings and solutions partner for architectural, automotive, industrial, marine, O&G, specialised
+                    clients; bringing joy and happiness through its colour trends to millions of families across the
+                    world.</p>
+                <a href="#origins" class="btn">Learn More</a>
+            </div>
+        </section>
+        <section class="card" id="innovation" data-aos="fade-right">
+            <img src="img/4.jpg" alt="">
+            <div>
+                <h2>RESEARCH & DEVELOPMENT</h2>
+                <h3>INNOVATING FOR PEOPLE AND PLACES</h3>
+                <p>Nippon Paint’s scientists, chemists and technologists are fully dedicated to extensive research in
+                    paint technologies while at the same time maintaining a fine ecological balance of protecting,
+                    beautifying and enhancing the environment. Based on its in-depth market understanding, the team
+                    produces specialised and distinctive solutions for customers’ needs, ranging from home furnishings
+                    to high-rise facades and industrial applications.</p>
+                <a href="#innovation" class="btn">Learn More</a>
+            </div>
+        </section>
+        <section class="card" id="awards" data-aos="fade-left">
+            <img src="img/5.jpg" alt="">
+            <div>
+                <h3>AWARDS & CERTIFICATIONS</h3>
+                <h4>ESCO Project Awards 2012</h4>
+                <p>Nippon Paint Thailand Won “ESCO Project Awards 2012” as an enterprise successful in using ESCO system
+                    by using Technology to help conserve energy. (2012)</p>
+                <h4>Most Trusted Brand Award – Gold</h4>
+                <p>Nippon Paint Hong Kong achieved Reader’s digest Most Trusted Brand Award – Gold. (2012)</p>
+                <h4>Asia Pacific Green Excellence Award NIPSEA</h4>
+                <p>Group achieved Frost & Sullivan Asia Pacific Green Excellence Award for Product Innovation in
+                    Decorative Coating. (2011)</p>
+                <h4>Archidex Green New Product Award</h4>
+                <p>Nippon Paint Malaysia awarded Archidex Green New Product Award and HomeDec New Product Award for the
+                    Nippon Paint Hydro Series. (2011)</p>
+                <a href="#awards" class="btn">Learn More</a>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+                duration: 1000, // 1sec
+                offset: 420,
+            }
+        );
+
+        document.querySelector('.menu-btn').addEventListener('click' , () => document.querySelector('.menu').classList.toggle('show'));
+    </script>
+</body>
+</html>
